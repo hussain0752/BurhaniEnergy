@@ -4,8 +4,6 @@
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="SemiColonWeb" />
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
 
     <!-- Stylesheets
     ============================================= -->
@@ -20,16 +18,6 @@
 
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        #map {
-            height: 100%;
-        }
-    </style>
 
     <!--[if lt IE 9]>
 		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -925,27 +913,8 @@
 	============================================= -->
 	<script type="text/javascript" src="js/functions.js"></script>
 
-    <div id="map"></div>
-    <script>
-
-        function initMap() {
-            var myLatLng = {lat: -25.363, lng: 131.044};
-
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 4,
-                center: myLatLng
-            });
-
-            var marker = new google.maps.Marker({
-                position: myLatLng,
-                map: map,
-                title: 'Hello World!'
-            });
-        }
-    </script>
-
     <script async defer src="https://maps.google.com/maps/api/js?key=AIzaSyBUtsSh4jAh4DowB5YZxQgkelZKMawHEWw&callback=initMap"></script>
-	<!--<script type="text/javascript" src="js/jquery.gmap.js"></script>
+	<script type="text/javascript" src="js/jquery.gmap.js"></script>
 
 	<script type="text/javascript">
 
@@ -975,7 +944,7 @@
 			}
 
 		});
-	</script>-->
+	</script>
 
 </body>
 </html>
