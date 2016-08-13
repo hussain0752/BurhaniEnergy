@@ -915,7 +915,13 @@
 	<script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyBUtsSh4jAh4DowB5YZxQgkelZKMawHEWw&callback=initMap"></script>
 	<script type="text/javascript" src="js/jquery.gmap.js"></script>
 
-	<script type="text/javascript">
+	var marker = new google.maps.Marker({
+	position: new google.maps.LatLng( -12.043333,-77.028333),
+	map: map,
+	title: 'Hello World!'
+	});
+
+	<!--<script type="text/javascript">
 
 		jQuery('#google-map').gMap({
 			address: 'Udaipur, Rajasthan',
@@ -943,7 +949,7 @@
 			}
 
 		});
-	</script>
+	</script>-->
 
 </body>
 </html>
